@@ -1,0 +1,34 @@
+list="g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."
+abc = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+count=0
+newlist=[]
+for i in list:
+  acount=0
+  i = list[count]
+  while True:
+    if i == abc[acount] and acount <= 23:
+      i = abc[acount+2]
+      break
+    elif acount > 23:
+      if i == abc[24]:
+        i="a"
+        break
+      elif i == abc[25]:
+        i="b"
+        break
+    elif i == "." or i == "'" or i== "(" or i == ")" or i == " ":
+      i=i
+      break
+    else:
+      acount+=1
+  count+=1
+  newlist.append(i)
+def convert(s):
+      new = ""
+      for x in s:
+        new += x 
+      return new
+print(convert(newlist))
+#prints out every letter from the list 2 charectars more in the alphabet -(exception of special charectars)
+ 
+  
